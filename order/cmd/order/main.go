@@ -6,10 +6,7 @@ import (
 )
 
 func main() {
-	dsn := "host=localhost port=5432 user=postgres password=ernar2026 dbname=orderdb sslmode=disable"
-	paymentServiceURL := "http://localhost:8081"
-
-	if err := app.Run(dsn, paymentServiceURL); err != nil {
+	if err := app.Run(); err != nil {
 		log.Fatal(err)
 	}
 }

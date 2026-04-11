@@ -6,9 +6,7 @@ import (
 )
 
 func main() {
-	dsn := "host=localhost port=5432 user=postgres password=ernar2026 dbname=paymentdb sslmode=disable"
-
-	if err := app.Run(dsn); err != nil {
+	if err := app.Run(); err != nil {
 		log.Fatal(err)
 	}
 }
